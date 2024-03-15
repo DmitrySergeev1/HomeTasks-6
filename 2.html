@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        numbers=[(Math.round(Math.random()*20)),(Math.round(Math.random()*20)),(Math.round(Math.random()*20))];
+        console.log(numbers);
+        let numFiltered=numbers.filter(function(num){
+return (0<num && num<10);
+        })
+        console.log(numFiltered);
+       let SumNumbers=numFiltered.reduce((all,elem)=> all+elem);
+       console.log(SumNumbers);
+        
+    </script>
+</body>
+</html>
