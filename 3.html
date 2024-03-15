@@ -8,7 +8,17 @@
 </head>
 <body>
     <script>
-        
+        arr=[(Math.round(Math.random()*20)),(Math.round(Math.random()*20)),(Math.round(Math.random()*20))];
+        console.log(arr);
+        let arrEven=arr.every(function(elem){
+            if(elem%2==0){
+                return true;
+            }
+            else{
+                return false;
+            }
+        })
+        console.log(arrEven);
     </script>
 </body>
 </html>
