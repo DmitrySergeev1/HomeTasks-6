@@ -9,13 +9,17 @@
 <body>
     <script>
         arr=[
-            (Math.round(Math.random()*10)),num1,
+            Math.round(Math.random()*10),
             Math.round(Math.random()*10),
             Math.round(Math.random()*10),
             Math.round(Math.random()*10),
             Math.round(Math.random()*10)
-    ];
-        
-    </script>
+    ]; 
+         arrIndexPositive=[arr[0], arr[2], arr[4]];
+         arrIndexNegative=[arr[1], arr[3]];
+        let sumAIP=arrIndexPositive.reduce((all,elem) => all+elem);
+        let sumAIN=arrIndexNegative.reduce((all,elem) => all+elem);
+        console.log((sumAIP/sumAIN).toFixed(2));
+        </script>
 </body>
 </html>
